@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+{%block title%}result{%endblock%}
+{%block content%}
+<div class="d-flex align-items-center justify-content-center p-3 mb-2 bg-info text-dark">
+    {% if prediction==1 %}
+    <h1>Prediction: <span class='danger'>You have Chances of Heart Disease.</span></h1>
+
+    {% elif prediction==0 %}
+    <h1>Prediction: <span class='safe'>Great! You DON'T chances have Heart Disease.</span></h1>
+    
+
+    {% endif %}
+    </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb1McEUYAWZE0azcQOIu2A8y7fomo0h1aLtw&usqp=CAU" class="img-fluid">
+       {% endblock %}
